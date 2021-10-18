@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <title>Landing page</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="logo">
+        <img
+          src="product-landing-page-logo.png"
+          id="header-img"
+          alt="original trombones"
+        />
+      </div>
+      <nav id="nav-bar">
+        <a href="#features" class="nav-link"> Features</a>
+        <a href="#howitworks" class="nav-link"> How It Works</a>
+        <a href="#pricing" class="nav-link"> Pricing</a>
+      </nav>
+    </header>
+    <div class="container">
+      <section id="homemade">
+        <h2 id="cont">Handcrafted, home-made masterpieces</h2>
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+          />
+          <button type="submit" id="btn">get started</button>
+        </form>
+      </section>
+    </div>
+    <div class="container">
+      <section id="features">
+        <div class="grid">
+          <div class="icon">
+            <i class="fa fa-3x fa-fire"></i>
+          </div>
+          <div class="desc">
+            <h2>Premium Materials</h2>
+            <p>
+              Our trombones use the shiniest brass which is sourced locally.
+              This will increase the longevity of your purchase.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="icon">
+            <i class="fa fa-3x fa-truck"></i>
+          </div>
+          <div class="desc">
+            <h2>Fast Shipping</h2>
+            <p>
+              We make sure you recieve your trombone as soon as we have finished
+              making it. We also provide free returns if you are not satisfied.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid">
+          <div class="icon">
+            <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+          </div>
+          <div class="desc">
+            <h2>Quality Assurance</h2>
+            <p>
+              For every purchase you make, we will ensure there are no damages
+              or faults and we will check and test the pitch of your instrument.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="howitworks">
+        <iframe
+          width="560"
+          id="video"
+          height="315"
+          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="pricing">
+        <div class="product" id="tenor">
+          <div class="level">Tenor Trombone</div>
+          <h2>600$</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="bass">
+          <div class="level">BASS TROMBONE</div>
+          <h2>$900</h2>
+          <ol>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum.</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+        <div class="product" id="valve">
+          <div class="level">VALVE TROMBONE</div>
+          <h2>$1200</h2>
+          <ol>
+            <li>Plays similar to a Trumpet</li>
+            <li>Great for Jazz Bands</li>
+            <li>Lorem ipsum dolor.</li>
+            <li>Lorem ipsum.</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+      <footer>
+        <div class="foot">
+          <a href="#"> Privacy</a>
+          <a href="#"> Terms</a>
+          <a href="#"> Contact</a>
+        </div>
+        <span> Copyright 2016, Original Trombones</span>
+      </footer>
+    </div>
+  </body>
+</html>
+<style>
+  body {
+    background-color: rgb(233, 232, 230);
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(233, 232, 230);
+    color: white;
+    /* padding: 1em; */
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #header-img {
+    width: 320px;
+    height: auto;
+    margin-top: 15px;
+  }
+  #nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    text-align: center;
+    padding: 0px 15px;
+  }
+  li {
+    list-style-type: none;
+  }
+  #cont {
+    text-align: center;
+    margin-top: 55px;
+  }
+  .container {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  #homemade {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+  }
+  #form {
+    display: block;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+  }
+
+  input {
+    width: 100%;
+    height: 23px;
+    font-size: 18px;
+  }
+  #btn {
+    text-transform: uppercase;
+    width: auto;
+    height: auto;
+    padding: 2px;
+    background-color: rgb(235, 235, 20);
+    margin-top: 17px;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+  }
+  #btn:hover {
+    background-color: orange;
+  }
+  .grid {
+    display: flex;
+  }
+  #features {
+    margin-top: 60px;
+  }
+  #features .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 125px;
+    width: 15vw;
+    color: darkorange;
+  }
+  .desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 2px; */
+    width: 1000px;
+    height: 125px;
+  }
+  .fa,
+  .fas {
+    font-weight: 900px;
+  }
+  #video {
+    margin: 30px;
+  }
+  #howitworks {
+    display: flex;
+    justify-content: center;
+  }
+  #pricing {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+  }
+  .product {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    border-radius: 3px;
+    border: 1px black solid;
+    width: calc(100% / 3);
+  }
+  .product > .level {
+    background-color: #ddd;
+    color: black;
+    padding: 15px 0;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  .product ol {
+    margin: 10px 10px 10px 0;
+  }
+  .product > ol > li {
+    padding: 5px 0;
+  }
+  .btn {
+    text-transform: uppercase;
+    width: 100px;
+    height: 50px;
+    padding: 2px;
+    background-color: rgb(235, 235, 20);
+    margin-top: 17px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    border: none;
+    border-radius: 2px;
+  }
+  .btn:hover {
+    background-color: orange;
+  }
+  footer {
+    margin-top: 30px;
+    background-color: rgb(196, 195, 195);
+    padding: 20px;
+    margin-bottom: -10px;
+  }
+  .foot {
+    display: flex;
+    justify-content: flex-end;
+  }
+  footer a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    padding: 0px 10px;
+  }
+  footer span {
+    margin-top: 7px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 14px;
+  }
+</style>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Shop</title>
+  </head>
+  <body>
+    <header id="header">
+        <div class="menu">
+        <div id="menu-div"> </div>
+        <div id="menu-div"> </div>
+        <div id="menu-div"> </div>
+        </div>
+      <div class="logo">
+        <img
+          src="9cce0760-dcaa-44d3-92ee-c91e50710623.jpeg"
+          id="logo"
+          alt="logo"
+        />
+      </div>
+      <nav id="nav-bar">
+        <a href="#shop" class="nav-link"> shop</a>
+        <a href="#sign-in" class="nav-link"> sign in</a>
+        <a href="#basket" class="nav-link">
+          <img
+            src="035dd8e9-8aca-4e7d-8803-d5de839702f7.jpeg"
+            id="bask"
+            alt="basket"
+          />
+        </a>
+      </nav>
+    </header>
+    <main>
+      <div class="main">
+        <img src="Group-6313.jpg" id="main-img" />
+      </div>
+      <div class="second">
+          <h1>Welcome!</h1>
+          <p id="text">  I’m Egle Karalyte, a brand strategist and creator of this platform. 
+              Together with my team,
+               I’ve been helping top brands and creators on almost 
+               every continent to go for their dreams and elevate their brand experience to drive sales.</p>
+          <p id='text'> Have a look around – you’ll find the structure, systemized processes, 
+              and a gamified approach to catch your next wave of success. Catch it with a splash!</p>
+          <button  class="btn"> <strong>Let's meet!</strong></button>
+        </div>  
+      </div>
+    </main>
+    <footer>
+  <p id="foot"> we are very proud to have as clients</p>
+    </footer>
+  </body>
+</html>
+<style>
+  body {
+    background-color: white;
+    font-family: "Montserrat", sans-serif;
+  }
+  header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: white;
+    color: white;
+  }
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  #nav-bar {
+    display: flex;
+    align-items: center;
+  }
+  .nav-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: black;
+    text-align: center;
+    padding: 0px 15px;
+   
+  }
+  .nav-link:hover{
+      color:red;
+  }
+  #logo {
+    height: 45px;
+    padding: 10px;
+    margin-left: 20px;
+  }
+  #bask {
+    height: 25px;
+  }
+  main{
+    display: flex;
+      flex-direction: row; 
+      justify-content: center;
+      margin-top: 100px;
+      margin-bottom: 50px;
+  }
+  .second{
+        align-content:flex-start ;
+        display: flex; 
+        padding-left: 80px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+  }
+  #text{
+      width: 450px;
+      text-align: left; 
+      padding: 9px 0 8px 0;
+      font-size: 20px;
+  }
+  .btn{
+      width:fit-content;
+      font-size: 20px;
+      background-color: black;
+      color: white;
+     padding: 20px;
+     font-family: "Montserrat", sans-serif;
+  }
+  .btn:hover{
+      background-color: navy;
+  }
+  footer{
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      align-content: flex-end;
+      margin-top: 100px;
+  }
+  #foot{
+      text-transform: uppercase;
+  }
+  .menu{
+      margin-left: 40px;
+  }
+  #menu-div{
+    width: 35px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+  }
+</style>
